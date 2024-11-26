@@ -1,35 +1,61 @@
 .navbar {
-    display: flex;
-    justify-content: right;
-    margin-top: 25px;
-    background-color: #333;
-    padding: 18px 0px;
-    border-radius: 20px;
-    font-size: 18px;
+  display: flex;
+  justify-content: right;
+  margin-top: 25px;
+  background-color: #333;
+  padding: 18px 0px;
+  border-radius: 20px;
+  font-size: 18px;
 }
 .navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    margin-right: 30px;
-    margin-top: 8px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  margin-right: 30px;
+  margin-top: 8px;
 }
 .navbar .logo {
- margin-right: 750px;
- color: #fff;
- font-size: 28px;
+  margin-right: 740px;
+  color: #fff;
+  font-size: 28px;
 }
 .image img {
-    width: 1300px;
-    height: 450px;
-    margin-top: 30px;
+  width: 1300px;
+  /* height: 450px; */
+  margin-top: 30px;
+  max-width: 100%; /* Membuat gambar tidak melebihi ukuran kontainernya */
+  height: auto; /* Mempertahankan rasio aspek gambar */
+  /* display: block; Menghilangkan jarak bawah (opsional) */
+  border-radius: 30px;
 }
-.footer {
-    display: flex;
-    justify-content: center;
+  
+
+
+footer {
+    max-width: 1330px;
     background-color: #333;
-    padding: 15px 0px;
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 15px;
     color: white;
-}
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  footer a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer a:hover {
+    color: white;
+  }
+
+  /* Mengatur jarak konten agar tidak tertutup footer */
+  body {
+    margin-bottom: 60px;
+  }
